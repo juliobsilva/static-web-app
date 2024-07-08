@@ -3,7 +3,7 @@ name: Deploy web app to Azure Static Web Apps
 env:
   APP_LOCATION: "/" 
   API_LOCATION: "api" 
-  OUTPUT_LOCATION: "build" 
+  OUTPUT_LOCATION: "static" 
 
 on:
   push:
@@ -25,6 +25,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy
     steps:
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        
       - uses: actions/checkout@v4
         with:
           submodules: true
