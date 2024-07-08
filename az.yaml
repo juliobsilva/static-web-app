@@ -1,5 +1,5 @@
 defaults:
-  app_location: "src"  
+  app_location: "/"  
   api_location: "api"  
   output_location: "public"  
 
@@ -13,4 +13,4 @@ build:
 - location: "/"
   staticWebApp:
     spa:
-      appSource: "build"
+      appSource: "public"
