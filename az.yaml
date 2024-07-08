@@ -1,7 +1,7 @@
 defaults:
   app_location: "/"  
   api_location: "api"  
-  output_location: "build"  
+  output_location: "static"  
 
 build:
   steps:
