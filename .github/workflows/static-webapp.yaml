@@ -1,7 +1,7 @@
 name: Deploy web app to Azure Static Web Apps
 
 env:
-  APP_LOCATION: "build" 
+  APP_LOCATION: "static" 
   API_LOCATION: "api" 
   OUTPUT_LOCATION: "build" 
 
@@ -30,6 +30,11 @@ jobs:
     - uses: actions/checkout@v4
       with:
        submodules: true
+
+    - name: Install Dependencies
+      run: |      
+        sudo apt-get update
+        sudo apt-get install apt-utils
 
     - name: Build And Deploy
       uses: Azure/static-web-apps-deploy@v1
