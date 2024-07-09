@@ -31,10 +31,10 @@ jobs:
       with:
        submodules: true
 
-    - name: Install Dependencies
-      run: |      
+    - name: Set up environment
+      run: |
         sudo apt-get update
-        sudo apt-get install apt-utils
+        sudo apt-get install -y apt-utils
 
     - name: Build And Deploy
       uses: Azure/static-web-apps-deploy@v1
