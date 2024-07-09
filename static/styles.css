@@ -1,0 +1,32 @@
+/* Estilização do Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilização do Main */
+main {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Estilização do Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilização do Body */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
