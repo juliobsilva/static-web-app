@@ -3,7 +3,7 @@ name: Deploy web app to Azure Static Web Apps
 env:
   APP_LOCATION: "static" 
   API_LOCATION: "api" 
-  #OUTPUT_LOCATION: "build" 
+  OUTPUT_LOCATION: "build" 
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
        action: "upload"
        app_location: ${{ env.APP_LOCATION }}
        api_location: ${{ env.API_LOCATION }}
-       #output_location: ${{ env.OUTPUT_LOCATION }}
+       output_location: ${{ env.OUTPUT_LOCATION }}
 
   close_pull_request:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
