@@ -1,7 +1,7 @@
 name: Deploy web app to Azure Static Web Apps
 
 env:
-  APP_LOCATION: "static" 
+  APP_LOCATION: "build" 
   API_LOCATION: "api" 
   OUTPUT_LOCATION: "build" 
 
